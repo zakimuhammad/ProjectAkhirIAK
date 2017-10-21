@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context="com.example.zaki.quizislami.MainActivity">
+
+
+    <TextView
+        android:id="@+id/soalKe"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="SOAL KE-1"
+        android:textColor="@android:color/black"/>
+
+    <ImageView
+        android:id="@+id/gambarSoal"
+        android:layout_below="@+id/soalKe"
+        android:src="@drawable/bismillah"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/soalIslami"
+        android:layout_below="@+id/gambarSoal"
+        android:text="Apakah Nama Seni Gambar Diatas?"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/soalAB"
+        android:background="#3497e9"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/soalIslami">
+
+        <Button
+            android:id="@+id/btnSoalA"
+            android:text="Kaligrafi"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="checkJawaban"/>
+
+        <Button
+            android:id="@+id/btnSoalB"
+            android:text="Lukisan"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="checkJawaban"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/soalCD"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/soalAB"
+        android:background="#3497e9">
+
+        <Button
+            android:id="@+id/btnSoalC"
+            android:text="Sketsa"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="checkJawaban"/>
+
+        <Button
+            android:id="@+id/btnSoalD"
+            android:text="Abstrak"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="checkJawaban"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>
